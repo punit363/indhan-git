@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    body {
+      background-color: white;
+      color: black;
+    }
+
+    body.dark {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
     <div>
@@ -13,6 +31,13 @@
         <p>This is a git github session</p>
         <p>This is a git github session continued to branching</p>
         <p>This is master branch</p>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </div>
+    <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+
 </body>
 </html>
